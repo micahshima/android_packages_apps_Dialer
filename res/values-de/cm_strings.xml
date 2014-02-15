@@ -48,7 +48,7 @@
     <string name="menu_add_to_blacklist">Zur Sperrliste hinzufügen</string>
     <string name="toast_added_to_blacklist">%s wurde zur Sperrliste hinzugefügt</string>
 
-  <!-- AOSP strings Google forgot to mark as translatable=false -->
+    <!-- AOSP strings Google forgot to mark as translatable=false -->
     <string name="call_log_activity_title_font_family">sans-serif-light</string>
     <string name="show_all_contacts_title_font_family">sans-serif-light</string>
     <string name="dialpad_star_number">*</string>
@@ -65,4 +65,7 @@
     <string name="dialpad_9_letters">WXYZ</string>
     <string name="dialpad_star_letters"></string>
     <string name="dialpad_pound_letters"></string>
+
+    <!-- Forward lookup -->
+    <string name="nearby_places">Orte in der Nähe</string>
 </resources>
