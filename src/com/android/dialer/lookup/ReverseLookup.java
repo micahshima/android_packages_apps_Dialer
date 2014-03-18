@@ -44,7 +44,8 @@ public abstract class ReverseLookup {
             } else if (provider.equals(LookupSettings.RLP_WHITEPAGES)
                     || provider.equals(LookupSettings.RLP_WHITEPAGES_CA)) {
                 INSTANCE = new WhitePagesReverseLookup(context);
-            } else if (provider.equals(LookupSettings.RLP_YELLOWPAGES)) {
+            } else if (provider.equals(LookupSettings.RLP_YELLOWPAGES)
+                    || provider.equals(LookupSettings.RLP_YELLOWPAGES_CA)) {
                 INSTANCE = new YellowPagesReverseLookup(context);
             } else if (provider.equals(LookupSettings.RLP_ZABASEARCH)) {
                 INSTANCE = new ZabaSearchReverseLookup(context);
@@ -62,7 +63,8 @@ public abstract class ReverseLookup {
                 || provider.equals(LookupSettings.RLP_WHITEPAGES_CA))
                 && INSTANCE instanceof WhitePagesReverseLookup) {
             return true;
-        } else if (provider.equals(LookupSettings.RLP_YELLOWPAGES)
+        } else if ((provider.equals(LookupSettings.RLP_YELLOWPAGES)
+                || provider.equals(LookupSettings.RLP_YELLOWPAGES_CA))
                 && INSTANCE instanceof YellowPagesReverseLookup) {
             return true;
         } else if (provider.equals(LookupSettings.RLP_ZABASEARCH)
